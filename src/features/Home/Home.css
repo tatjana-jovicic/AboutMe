@@ -3,15 +3,12 @@
   font-size: 40px;
   color: black;
 }
-/* .my_pic {
-  width: 200px;
-  border-radius: 50%;
-} */
 .paragraph {
   color: black;
   font-size: 15px;
   padding-top: auto;
   padding-bottom: 1rem;
+  max-width: 700px;
 }
 .footer_1 {
   display: grid;
