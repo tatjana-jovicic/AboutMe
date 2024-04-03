@@ -11,20 +11,20 @@ const Home = () => {
   const [object, setObject] = useState([
     {
       linkIcon: "https://sr-rs.facebook.com/tatjana.jovicic.505",
-      imgIcon: { Facebook },
+      imgIcon: Facebook,
     },
     {
       linkIcon: "https://twitter.com",
-      imgIcon: { Twitter },
+      imgIcon: Twitter,
     },
     {
       linkIcon:
         "https://www.linkedin.com/in/tatjana-jovi%C4%8Di%C4%87-113474290",
-      imgIcon: { Linkedin },
+      imgIcon: Linkedin,
     },
     {
       linkIcon: "https://github.com/tatjana-jovicic",
-      imgIcon: { GitHub },
+      imgIcon: GitHub,
     },
   ]);
   return (
