@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Home.css";
 import FooterNav from "./components/FooterNav";
-import GitHub from "../../assets/github.png";
+import GitHub from "../../assets/githhub.png";
 import Facebook from "../../assets/facebook.png";
 import Twitter from "../../assets/twitter.png";
 import Linkedin from "../../assets/linkedin.png";
