@@ -13,12 +13,14 @@
 .color_name {
   color: rgb(35, 109, 85);
 }
-.button {
-  background-color: rgb(42, 128, 101);
+.button_download {
+  color: rgb(231, 235, 231);
+  background-color: rgb(55, 98, 90);
 }
-.button:hover {
-  color: white;
-  border: 1px solid rgb(42, 128, 101);
+.button_download:hover {
+  color: black;
+  background-color: Transparent;
+  border: 1px solid rgb(50, 62, 50);
 }
 .picture_style {
   border-radius: 10%;
