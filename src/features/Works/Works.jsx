@@ -43,6 +43,7 @@ const Works = () => {
   return (
     <>
       <h1 className="my_works">MY WORKS</h1>
+      <h1 className="my_works">MY WORKS</h1>
       <div className="button_container">
         <button className="button active">ALL</button>
         <button className="button">UI/UX DESIGN</button>
