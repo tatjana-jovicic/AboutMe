@@ -51,7 +51,7 @@ const About = () => {
             ))}
           </ul>
 
-          <button className="button">DOWNLOAD RESUME</button>
+          <button className="button_download">DOWNLOAD RESUME</button>
         </div>
       </div>
     </div>
