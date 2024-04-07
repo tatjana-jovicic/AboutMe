@@ -10,21 +10,11 @@
   gap: 10px;
   justify-content: center;
 }
-.button {
-  color: rgb(231, 235, 231);
-  background-color: rgb(55, 98, 90);
-  margin-right: 15px;
-  font-size: 14px;
-  display: inline-block;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-}
-.button:hover,
-.active {
+/* .active {
   color: black;
   background-color: Transparent;
   border: 1px solid rgb(50, 62, 50);
-}
+} */
 .design_container {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -38,21 +28,4 @@
   border: 1px solid rgb(127, 127, 127);
   border-radius: 5%;
   width: 100%;
-}
-.design_inside {
-  margin: 1rem;
-}
-.image_design {
-  width: 100%;
-  max-width: 250px;
-}
-.heading_design {
-  color: rgb(30, 33, 32);
-  text-align: start;
-  margin: auto;
-}
-.paragraph_design {
-  color: rgb(30, 33, 32);
-  text-align: start;
-  margin: auto;
 }

@@ -16,6 +16,8 @@
 .button_download {
   color: rgb(231, 235, 231);
   background-color: rgb(55, 98, 90);
+  display: flex;
+  justify-content: start;
 }
 .button_download:hover {
   color: black;
@@ -39,6 +41,9 @@
 .right_container {
   margin-top: auto;
   margin-bottom: auto;
+}
+.my_name {
+  text-align: start;
 }
 .label_style {
   color: black;

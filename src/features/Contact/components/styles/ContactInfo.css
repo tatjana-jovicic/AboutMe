@@ -1,0 +1,28 @@
+.con {
+  display: flex;
+}
+.logo_container {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.head_par {
+  display: flex;
+  flex-direction: column;
+}
+.heading_info {
+  text-align: start;
+  margin-bottom: 0;
+  color: black;
+}
+.paragraph_info {
+  text-align: start;
+  margin-top: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  font-size: 14px;
+}
