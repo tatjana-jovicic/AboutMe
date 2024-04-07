@@ -39,7 +39,7 @@ const About = () => {
       <div className="container">
         <img className="picture_style" src={PicOfMe} alt="pictureOfMe" />
         <div className="right_container">
-          <h3>
+          <h3 className="my_name">
             Hi, I am <span className="color_name">Tatjana Jovičić!</span>
           </h3>
           <ul className="bullets">
@@ -50,7 +50,6 @@ const About = () => {
               </li>
             ))}
           </ul>
-
           <button className="button_download">DOWNLOAD RESUME</button>
         </div>
       </div>

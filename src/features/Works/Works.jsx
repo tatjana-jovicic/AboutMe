@@ -1,13 +1,16 @@
 import "./Works.css";
+import AllProjects from "./components/AllProjects";
 import WallArt from "../../assets/wallArt.png";
 import PackageMilk from "../../assets/packageMilk.jpg";
 import PackagePets from "../../assets/packagePets.jpg";
 import Creme from "../../assets/cremee.png";
 import Candel from "../../assets/candels.jpg";
 import UiUx from "../../assets/ui_ux.png";
+import Button from "./components/Button";
+import { useState } from "react";
 
 const Works = () => {
-  const listDesigns = [
+  const [projects, setProjects] = useState([
     {
       image: Candel,
       heading: "Candle",
@@ -38,27 +41,26 @@ const Works = () => {
       heading: "Cream",
       paragraph: "Creative cream box design",
     },
-  ];
+  ]);
 
   return (
     <>
       <h1 className="my_works">MY WORKS</h1>
-      <h1 className="my_works">MY WORKS</h1>
-      <div className="button_container">
-        <button className="button active">ALL</button>
-        <button className="button">UI/UX DESIGN</button>
-        <button className="button">HTML & CSS</button>
-        <button className="button">RECT JS</button>
-        <button className="button">NODE JS</button>
-      </div>
+      <di className="button_container">
+        <Button buttonText="ALL" />
+        <Button buttonText="UI/UX DESIGN" />
+        <Button buttonText="HTML & CSS" />
+        <Button buttonText="REACT JS" />
+        <Button buttonText="NODE JS" />
+      </di>
       <div className="design_container">
-        {listDesigns.map((works) => (
-          <div className="design" key={works.paragraph}>
-            <div className="design_inside">
-              <img className="image_design" src={works.image} alt="design" />
-              <h4 className="heading_design">{works.heading}</h4>
-              <p className="paragraph_design">{works.paragraph}</p>
-            </div>
+        {projects.map((works) => (
+          <div className="design">
+            <AllProjects
+              image={works.image}
+              heading={works.heading}
+              paragraph={works.paragraph}
+            />
           </div>
         ))}
       </div>

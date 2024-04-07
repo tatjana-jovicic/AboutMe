@@ -1,0 +1,17 @@
+.design_inside {
+  margin: 1rem;
+}
+.image_design {
+  width: 100%;
+  max-width: 250px;
+}
+.heading_design {
+  color: rgb(30, 33, 32);
+  text-align: start;
+  margin: auto;
+}
+.paragraph_design {
+  color: rgb(30, 33, 32);
+  text-align: start;
+  margin: auto;
+}
