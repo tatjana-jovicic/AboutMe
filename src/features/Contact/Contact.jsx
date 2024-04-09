@@ -1,21 +1,24 @@
 import { useState } from "react";
 import "./Contact.css";
 import ContactInfo from "./components/ContactInfo";
+import Phone from "../../assets/phone.png";
+import Mail from "../../assets/mail.png";
+import Location from "../../assets/location.webp";
 
 const Contact = () => {
   const [ConInfo, setConInfo] = useState([
     {
-      logo: "https://www.freeiconspng.com/thumbs/telephone-icon/tel-phone-icon-5.png",
+      logo: Phone,
       heading: "Contact on phone",
       paragraph: "+387 65 077 053",
     },
     {
-      logo: "https://cdn-icons-png.flaticon.com/512/666/666162.png",
+      logo: Mail,
       heading: "Contact on email",
       paragraph: "tatjanajovicic19@gmail.com",
     },
     {
-      logo: "https://www.freeiconspng.com/thumbs/location-icon-png/location-symbol-png-circle-location-icon-13.png",
+      logo: Location,
       heading: "Contact address",
       paragraph: "Vlajići, Teslić 74 270, Bosnia and Herzegovina",
     },
