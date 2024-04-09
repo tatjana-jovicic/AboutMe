@@ -9,52 +9,93 @@ import UiUx from "../../assets/ui_ux.png";
 import Button from "./components/Button";
 import { useState } from "react";
 
+export const projects = [
+  {
+    id: 0,
+    image: Candel,
+    heading: "Candle",
+    paragraph: "Creative Candle Light",
+    group: "html",
+  },
+  {
+    id: 1,
+    image: WallArt,
+    heading: "Paint",
+    paragraph: "Creative wall painting",
+    group: "react",
+  },
+  {
+    id: 2,
+    image: UiUx,
+    heading: "UI/UX Sample",
+    paragraph: "UI/UX Sample design mockup",
+    group: "ux",
+  },
+  {
+    id: 3,
+    image: PackageMilk,
+    heading: "Packet",
+    paragraph: "Packet design mockup",
+    group: "node",
+  },
+  {
+    id: 4,
+    image: PackagePets,
+    heading: "Packet",
+    paragraph: "Packet design for pets",
+    group: "react",
+  },
+  {
+    id: 5,
+    image: Creme,
+    heading: "Cream",
+    paragraph: "Creative cream box design",
+    group: "ux",
+  },
+];
+
 const Works = () => {
-  const [projects, setProjects] = useState([
-    {
-      image: Candel,
-      heading: "Candle",
-      paragraph: "Creative Candle Light",
-    },
-    {
-      image: WallArt,
-      heading: "Paint",
-      paragraph: "Creative wall painting",
-    },
-    {
-      image: UiUx,
-      heading: "UI/UX Sample",
-      paragraph: "UI/UX Sample design mockup",
-    },
-    {
-      image: PackageMilk,
-      heading: "Packet",
-      paragraph: "Packet design mockup",
-    },
-    {
-      image: PackagePets,
-      heading: "Packet",
-      paragraph: "Packet design for pets",
-    },
-    {
-      image: Creme,
-      heading: "Cream",
-      paragraph: "Creative cream box design",
-    },
-  ]);
+  const [selectedGroup, setSelectedGroup] = useState("all");
+
+  console.log(selectedGroup);
+
+  const filteredProjects =
+    selectedGroup === "all"
+      ? projects
+      : projects.filter((project) => project.group === selectedGroup);
 
   return (
     <>
       <h1 className="my_works">MY WORKS</h1>
       <di className="button_container">
-        <Button buttonText="ALL" />
-        <Button buttonText="UI/UX DESIGN" />
-        <Button buttonText="HTML & CSS" />
-        <Button buttonText="REACT JS" />
-        <Button buttonText="NODE JS" />
+        <Button
+          additionalClass={selectedGroup === "all" ? "active" : ""}
+          onclick={() => setSelectedGroup("all")}
+          buttonText="ALL"
+        />
+        <Button
+          additionalClass={selectedGroup === "ux" ? "active" : ""}
+          onclick={() => setSelectedGroup("ux")}
+          buttonText="UI/UX DESIGN"
+        />
+        <Button
+          additionalClass={selectedGroup === "html" ? "active" : ""}
+          onclick={() => setSelectedGroup("html")}
+          buttonText="HTML & CSS"
+        />
+        <Button
+          additionalClass={selectedGroup === "react" ? "active" : ""}
+          onclick={() => setSelectedGroup("react")}
+          buttonText="REACT JS"
+        />
+        <Button
+          additionalClass={selectedGroup === "node" ? "active" : ""}
+          onclick={() => setSelectedGroup("node")}
+          buttonText="NODE JS"
+        />
       </di>
       <div className="design_container">
-        {projects.map((works) => (
+        {filteredProjects.map((works) => (
           <div className="design">
             <AllProjects
               image={works.image}
