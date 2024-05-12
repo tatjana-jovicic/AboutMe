@@ -1,9 +1,9 @@
-.headCss {
+.head {
   font-weight: bold;
   font-size: 40px;
   color: black;
 }
-.paragraph {
+.paragraph1 {
   color: black;
   font-size: 15px;
   padding-top: auto;
@@ -12,18 +12,23 @@
 }
 .footer_1 {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 20px;
   margin: 0px auto;
   max-width: 200px;
   width: 100%;
   margin-top: 1rem;
+  padding-left: 2rem;
 }
-
 .footer_2 {
   max-width: 300px;
   width: 100%;
 }
 .color_name {
   color: rgb(35, 109, 85);
+}
+@media only screen and (max-width: 500px) {
+  .head {
+    font-size: 25px;
+  }
 }

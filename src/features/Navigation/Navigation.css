@@ -1,7 +1,4 @@
-body {
-  background-color: rgb(207, 220, 216);
-}
-.navCSS {
+.nav {
   display: flex;
   gap: 20px;
   align-items: center;

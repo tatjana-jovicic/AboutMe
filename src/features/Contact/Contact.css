@@ -10,6 +10,8 @@
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .container_left {
   width: 100%;
@@ -84,4 +86,30 @@
   color: black;
   background-color: Transparent;
   border: 1px solid rgb(50, 62, 50);
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact_me {
+    font-size: 18px;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+  .container_right {
+    margin-bottom: 1rem;
+  }
+  .inputs button {
+    color: rgb(231, 235, 231);
+    background-color: rgb(55, 98, 90);
+    width: 100%;
+    max-width: 110px;
+    font-size: 13px;
+  }
 }
