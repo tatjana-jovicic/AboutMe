@@ -1,7 +1,7 @@
 .my_works {
   font-size: 20px;
   color: black;
-  padding-top: 2.5rem;
+  padding-top: 5rem;
 }
 .button_container {
   padding-top: 1rem;
@@ -18,6 +18,7 @@
   max-width: 800px;
   width: 100%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .design {
   border: 1px solid rgb(127, 127, 127);
@@ -28,4 +29,9 @@
   background-color: Transparent !important;
   color: black !important;
   border: 1px solid rgb(50, 62, 50) !important;
+}
+@media only screen and (max-width: 550px) {
+  .my_works {
+    font-size: 15px;
+  }
 }

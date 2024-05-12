@@ -3,7 +3,6 @@ import "./Home.css";
 import FooterNav from "./components/FooterNav";
 import GitHub from "../../assets/githhub.png";
 import Facebook from "../../assets/facebook.png";
-import Twitter from "../../assets/twitter.png";
 import Linkedin from "../../assets/linkedin.png";
 import ProfilePicture from "../../components/ProfilePicture/ProfilePicture";
 
@@ -12,10 +11,6 @@ const Home = () => {
     {
       linkIcon: "https://sr-rs.facebook.com/tatjana.jovicic.505",
       imgIcon: Facebook,
-    },
-    {
-      linkIcon: "https://twitter.com",
-      imgIcon: Twitter,
     },
     {
       linkIcon:
@@ -27,13 +22,14 @@ const Home = () => {
       imgIcon: GitHub,
     },
   ]);
+
   return (
     <div>
       <ProfilePicture />
-      <h1 className="headCss">
+      <h1 className="head">
         Hi, I am <span className="color_name">Tatjana Jovičić!</span>
       </h1>
-      <p className="paragraph">
+      <p className="paragraph1">
         I am a frontend web developer. I can provide clean code and pixel
         perfect design. I also make website more & more interactive with web
         animations.

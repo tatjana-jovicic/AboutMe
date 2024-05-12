@@ -1,10 +1,13 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
   gap: 10px;
 }
 .about_me {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .bullets li::marker {
   color: rgb(55, 98, 90);
@@ -14,15 +17,24 @@
   color: rgb(35, 109, 85);
 }
 .button_download {
-  color: rgb(231, 235, 231);
   background-color: rgb(55, 98, 90);
+  color: black;
+  border: 1px solid rgb(55, 98, 90);
+  padding: 10px 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: start;
 }
+.button_download a {
+  color: white;
+  text-decoration: none;
+}
 .button_download:hover {
-  color: black;
   background-color: Transparent;
   border: 1px solid rgb(50, 62, 50);
+}
+.button_download:hover a {
+  color: black;
 }
 .picture_style {
   border-radius: 10%;
@@ -38,12 +50,15 @@
   align-items: baseline;
   padding-left: 20px;
 }
-.right_container {
+.right_containerr {
+  width: 100%;
+  max-width: 400px;
   margin-top: auto;
   margin-bottom: auto;
 }
 .my_name {
   text-align: start;
+  padding-top: auto;
 }
 .label_style {
   color: black;
@@ -51,4 +66,23 @@
 }
 .value_style {
   color: rgb(35, 109, 85);
+}
+@media only screen and (max-width: 500px) {
+  .about_me {
+    padding-top: 5rem;
+    font-size: 20px;
+  }
+  .right_containerr {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  .button_download {
+    width: 100%;
+    max-width: 100px;
+    display: grid;
+    justify-content: center;
+    font-size: 15px;
+  }
 }

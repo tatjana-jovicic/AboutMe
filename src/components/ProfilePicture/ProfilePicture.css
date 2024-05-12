@@ -1,5 +1,12 @@
 .my_pic {
-  width: 150px;
+  width: 100%;
+  max-width: 200px;
   border-radius: 50%;
-  border: 3px solid rgb(35, 109, 85);
+  border: 2px solid rgb(35, 109, 85);
+}
+@media only screen and (max-width: 500px) {
+  .my_pic {
+    width: 100%;
+    max-width: 150px;
+  }
 }

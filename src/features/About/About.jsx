@@ -38,7 +38,7 @@ const About = () => {
       <h2 className="about_me">ABOUT ME</h2>
       <div className="container">
         <img className="picture_style" src={PicOfMe} alt="pictureOfMe" />
-        <div className="right_container">
+        <div className="right_containerr">
           <h3 className="my_name">
             Hi, I am <span className="color_name">Tatjana Jovičić!</span>
           </h3>
@@ -50,7 +50,14 @@ const About = () => {
               </li>
             ))}
           </ul>
-          <button className="button_download">DOWNLOAD RESUME</button>
+          <button className="button_download">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1xh62cmmGRzv0b4lJKtzPzHKxiZ36l7XM/view?usp=sharing"
+            >
+              SEE CV
+            </a>
+          </button>
         </div>
       </div>
     </div>
