@@ -53,7 +53,7 @@ const About = () => {
           <button className="button_download">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1xh62cmmGRzv0b4lJKtzPzHKxiZ36l7XM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iInzwyCKjzrZ7SR1EGQuTwL1hmtYnuQo/view?usp=sharing"
             >
               SEE CV
             </a>
