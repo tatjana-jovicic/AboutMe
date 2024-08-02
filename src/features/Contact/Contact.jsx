@@ -10,7 +10,7 @@ const Contact = () => {
     {
       logo: Phone,
       heading: "Contact on phone",
-      paragraph: "+387 65 077 053",
+      paragraph: "+387 00 000 000",
     },
     {
       logo: Mail,
@@ -20,7 +20,7 @@ const Contact = () => {
     {
       logo: Location,
       heading: "Contact address",
-      paragraph: "Vlajići, Teslić 74 270, Bosnia and Herzegovina",
+      paragraph: "Desanka Maksimović 10, Doboj 72 370, Bosnia and Herzegovina",
     },
   ]);
 
@@ -30,10 +30,7 @@ const Contact = () => {
       <div className="container">
         <div className="container_left">
           <h3 className="contact_info">Contact information</h3>
-          <p className="paragraph">
-            Lorem ipsum dolor sit ament consectetur adipisicing elit. A omnis,
-            harum possimus non praesentinum qui facere.
-          </p>
+          <p className="paragraph">You can contact me in the following ways.</p>
           <div className="info_container">
             {ConInfo.map((info) => (
               <div className="info">

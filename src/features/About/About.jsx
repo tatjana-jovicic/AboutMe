@@ -25,7 +25,7 @@ const About = () => {
     },
     {
       label: "Address",
-      value: "Vlajići, Teslić",
+      value: "Desanka Maksimović, Doboj",
     },
     {
       label: "Freelance",
@@ -51,12 +51,7 @@ const About = () => {
             ))}
           </ul>
           <button className="button_download">
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1iInzwyCKjzrZ7SR1EGQuTwL1hmtYnuQo/view?usp=sharing"
-            >
-              SEE CV
-            </a>
+            <a href="#">SEE CV</a>
           </button>
         </div>
       </div>
